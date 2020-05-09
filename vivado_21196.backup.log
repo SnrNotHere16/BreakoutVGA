@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 22 09:25:01 2020
+# Process ID: 21196
+# Current directory: C:/Users/OAkun/Desktop/Breakout
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18436 C:\Users\OAkun\Desktop\Breakout\Breakout.xpr
+# Log file: C:/Users/OAkun/Desktop/Breakout/vivado.log
+# Journal file: C:/Users/OAkun/Desktop/Breakout\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/OAkun/Desktop/Breakout/Breakout.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 719.961 ; gain = 106.750
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292A8AD8EA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292A8AD8EA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD8EA
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 09:32:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 09:33:32 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Mar 22 09:35:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 09:38:16 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 09:47:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Mar 22 09:50:02 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 09:59:21 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 10:00:24 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 10:03:18 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 10:04:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Mar 22 10:08:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 10:09:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 10:10:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Mar 22 10:12:11 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292A8AD8EA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292A8AD8EA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AD8EA
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 22 10:15:04 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 22 10:16:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Mar 22 10:18:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/OAkun/Desktop/Breakout/Breakout.runs/impl_1/Vga_sync_alpha.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 22 11:17:05 2020...

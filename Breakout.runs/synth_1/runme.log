@@ -1,0 +1,569 @@
+
+*** Running vivado
+    with args -log Vga_sync_alpha.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Vga_sync_alpha.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Vga_sync_alpha.tcl -notrace
+Command: synth_design -top Vga_sync_alpha -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14000 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 717.078 ; gain = 178.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Vga_sync_alpha' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/Vga_sync_alpha.v:8]
+INFO: [Synth 8-6157] synthesizing module 'AISO' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/AISO.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'AISO' (1#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/AISO.v:10]
+INFO: [Synth 8-6157] synthesizing module 'pGen25Mhz' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/pGen25Mhz.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pGen25Mhz' (2#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/pGen25Mhz.v:12]
+INFO: [Synth 8-6157] synthesizing module 'refr_tick' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/refr_tick.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'refr_tick' (3#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/refr_tick.v:15]
+INFO: [Synth 8-6157] synthesizing module 'H_Sync' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/H_Sync.v:10]
+INFO: [Synth 8-226] default block is never used [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/H_Sync.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'H_Sync' (4#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/H_Sync.v:10]
+INFO: [Synth 8-6157] synthesizing module 'V_Sync' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/V_Sync.v:14]
+INFO: [Synth 8-226] default block is never used [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/V_Sync.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'V_Sync' (5#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/V_Sync.v:14]
+INFO: [Synth 8-6157] synthesizing module 'breakout_animate' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/breakout_animate.v:9]
+INFO: [Synth 8-6157] synthesizing module 'bar_animate' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/paddle_animate.v:23]
+	Parameter MIN_X bound to: 0 - type: integer 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter BAR_Y_T bound to: 429 - type: integer 
+	Parameter BAR_Y_B bound to: 449 - type: integer 
+	Parameter BAR_X_SIZE bound to: 72 - type: integer 
+	Parameter BAR_V bound to: 15 - type: integer 
+WARNING: [Synth 8-5788] Register bar_x_reg_reg in module bar_animate is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/paddle_animate.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'bar_animate' (6#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/paddle_animate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ball_animate' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/ball_animate.v:23]
+	Parameter MIN_X bound to: 0 - type: integer 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter BALL_SIZE bound to: 8 - type: integer 
+	Parameter BALL_V_P bound to: 8 - type: integer 
+	Parameter BALL_V_N bound to: -8 - type: integer 
+	Parameter BALL_V_P_R bound to: 3 - type: integer 
+	Parameter BALL_V_N_R bound to: -3 - type: integer 
+	Parameter BAR_Y_T bound to: 429 - type: integer 
+	Parameter BAR_Y_B bound to: 449 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ball_animate' (7#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/ball_animate.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bricktest' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/bricktest.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bricktest' (8#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/bricktest.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gameover' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:23]
+	Parameter L_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gameover' (9#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'l_rgb' does not match port width (3) of module 'gameover' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/breakout_animate.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'breakout_animate' (10#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/breakout_animate.v:9]
+WARNING: [Synth 8-689] width (3) of port connection 'brickstaken' does not match port width (4) of module 'breakout_animate' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/Vga_sync_alpha.v:34]
+WARNING: [Synth 8-689] width (3) of port connection 'brickstakenled' does not match port width (4) of module 'breakout_animate' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/Vga_sync_alpha.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Vga_sync_alpha' (11#1) [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/Vga_sync_alpha.v:8]
+WARNING: [Synth 8-3331] design gameover has unconnected port h_video
+WARNING: [Synth 8-3331] design gameover has unconnected port v_video
+WARNING: [Synth 8-3331] design gameover has unconnected port tick60hz
+WARNING: [Synth 8-3331] design bricktest has unconnected port h_video
+WARNING: [Synth 8-3331] design bricktest has unconnected port v_video
+WARNING: [Synth 8-3331] design bricktest has unconnected port tick60hz
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[9]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[8]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[7]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[6]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[5]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[4]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[3]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[2]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[1]
+WARNING: [Synth 8-3331] design bricktest has unconnected port pix_x[0]
+WARNING: [Synth 8-3331] design ball_animate has unconnected port h_video
+WARNING: [Synth 8-3331] design ball_animate has unconnected port v_video
+WARNING: [Synth 8-3331] design bar_animate has unconnected port h_video
+WARNING: [Synth 8-3331] design bar_animate has unconnected port v_video
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 780.852 ; gain = 242.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.852 ; gain = 242.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.852 ; gain = 242.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/CECS361Lab5.xdc]
+Finished Parsing XDC File [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/CECS361Lab5.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.sources/CECS361Lab5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Vga_sync_alpha_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Vga_sync_alpha_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 900.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rom_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'a_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:162]
+INFO: [Synth 8-4471] merging register 'm_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:164]
+INFO: [Synth 8-4471] merging register 'e_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:166]
+INFO: [Synth 8-4471] merging register 'o_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:169]
+INFO: [Synth 8-4471] merging register 'v_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:171]
+INFO: [Synth 8-4471] merging register 'e1_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:173]
+INFO: [Synth 8-4471] merging register 'r_y_reg_reg[9:0]' into 'g_y_reg_reg[9:0]' [C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.srcs/sources_1/new/gameover.v:175]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 22    
+	   7 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 16    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 17    
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   8 Input      8 Bit        Muxes := 7     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Vga_sync_alpha 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module AISO 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module pGen25Mhz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module H_Sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+Module V_Sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bar_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ball_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 1     
+Module bricktest 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module gameover 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 9     
+	   3 Input      3 Bit       Adders := 14    
++---Registers : 
+	               10 Bit    Registers := 9     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 6     
+	   8 Input      7 Bit        Muxes := 2     
+Module breakout_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design gameover has unconnected port h_video
+WARNING: [Synth 8-3331] design gameover has unconnected port v_video
+WARNING: [Synth 8-3331] design gameover has unconnected port tick60hz
+WARNING: [Synth 8-3331] design ball_animate has unconnected port h_video
+WARNING: [Synth 8-3331] design ball_animate has unconnected port v_video
+WARNING: [Synth 8-3331] design bar_animate has unconnected port h_video
+WARNING: [Synth 8-3331] design bar_animate has unconnected port v_video
+INFO: [Synth 8-3886] merging instance 'five/two/direction_reg[1]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/two/direction_reg[0]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/seven/direction_reg[1]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/seven/direction_reg[0]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/six/direction_reg[1]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/six/direction_reg[0]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/five/direction_reg[1]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/five/direction_reg[0]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/four/direction_reg[1]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/four/direction_reg[0]' (FDC) to 'five/three/direction_reg[1]'
+INFO: [Synth 8-3886] merging instance 'five/three/direction_reg[1]' (FDC) to 'five/three/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'five/three/direction_reg[0]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[1]' (FDCE) to 'five/one/y_delta_reg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\five/one/y_delta_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[4]' (FDCE) to 'five/one/y_delta_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[5]' (FDCE) to 'five/one/y_delta_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[6]' (FDCE) to 'five/one/y_delta_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[7]' (FDCE) to 'five/one/y_delta_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/one/y_delta_reg_reg[8]' (FDCE) to 'five/one/y_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[0]' (FDPE) to 'five/one/x_delta_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[1]' (FDPE) to 'five/one/x_delta_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[4]' (FDPE) to 'five/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[5]' (FDPE) to 'five/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[6]' (FDPE) to 'five/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[7]' (FDPE) to 'five/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/one/x_delta_reg_reg[8]' (FDPE) to 'five/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[8]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[7]' (FDP) to 'five/ten/g_x_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[6]' (FDP) to 'five/ten/g_x_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[5]' (FDP) to 'five/ten/g_x_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[4]' (FDP) to 'five/ten/e1_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[3]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[0]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[1]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[2]' (FDC) to 'five/ten/g_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_x_reg_reg[9]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[8]' (FDP) to 'five/ten/e1_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[7]' (FDP) to 'five/ten/e1_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[6]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[5]' (FDP) to 'five/ten/e1_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[4]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[3]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[0]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[1]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[2]' (FDP) to 'five/ten/e1_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/r_x_reg_reg[9]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[8]' (FDP) to 'five/ten/e1_x_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[7]' (FDP) to 'five/ten/e1_x_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[6]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[5]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[4]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[3]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[0]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[1]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[2]' (FDC) to 'five/ten/e1_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e1_x_reg_reg[9]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[8]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[7]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[6]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[5]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[4]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[3]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[0]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[1]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[2]' (FDP) to 'five/ten/o_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/v_x_reg_reg[9]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[8]' (FDP) to 'five/ten/o_x_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[7]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[6]' (FDP) to 'five/ten/o_x_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[5]' (FDP) to 'five/ten/o_x_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[4]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[3]' (FDP) to 'five/ten/m_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[0]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[1]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[2]' (FDC) to 'five/ten/o_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/o_x_reg_reg[9]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[8]' (FDP) to 'five/ten/m_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[7]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[6]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[5]' (FDP) to 'five/ten/m_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[4]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[3]' (FDP) to 'five/ten/m_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[0]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[1]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[2]' (FDP) to 'five/ten/m_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/e_x_reg_reg[9]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[8]' (FDP) to 'five/ten/m_x_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[7]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[6]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[5]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[4]' (FDP) to 'five/ten/m_x_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[3]' (FDP) to 'five/ten/a_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[0]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[1]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[2]' (FDC) to 'five/ten/m_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/m_x_reg_reg[9]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_y_reg_reg[0]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_y_reg_reg[1]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_y_reg_reg[2]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_y_reg_reg[3]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'five/ten/g_y_reg_reg[4]' (FDC) to 'five/ten/a_x_reg_reg[9]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\five/ten/a_x_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\five/ten/a_x_reg_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 900.180 ; gain = 361.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    67|
+|3     |LUT1   |    14|
+|4     |LUT2   |   202|
+|5     |LUT3   |    28|
+|6     |LUT4   |    81|
+|7     |LUT5   |    42|
+|8     |LUT6   |   106|
+|9     |FDCE   |    72|
+|10    |FDPE   |    25|
+|11    |FDRE   |    13|
+|12    |IBUF   |     4|
+|13    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |   679|
+|2     |  five    |breakout_animate |   293|
+|3     |    eight |bricktest        |     3|
+|4     |    five  |bricktest_0      |     2|
+|5     |    four  |bricktest_1      |     3|
+|6     |    one   |ball_animate     |   192|
+|7     |    seven |bricktest_2      |     2|
+|8     |    six   |bricktest_3      |     2|
+|9     |    ten   |gameover         |    10|
+|10    |    three |bricktest_4      |     2|
+|11    |    two   |bricktest_5      |     4|
+|12    |    zero  |bar_animate      |    73|
+|13    |  four    |V_Sync           |    78|
+|14    |  one     |pGen25Mhz        |     9|
+|15    |  three   |H_Sync           |   230|
+|16    |  two     |refr_tick        |    34|
+|17    |  zero    |AISO             |     3|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 910.938 ; gain = 252.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 910.938 ; gain = 372.137
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 923.020 ; gain = 621.402
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 923.020 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OAkun/Desktop/School/CECS361/Breakout/Breakout.runs/synth_1/Vga_sync_alpha.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Vga_sync_alpha_utilization_synth.rpt -pb Vga_sync_alpha_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May  9 04:50:58 2020...

@@ -1,0 +1,86 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat May  9 04:51:33 2020
+| Host         : DESKTOP-NDOLUA7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Vga_sync_alpha_control_sets_placed.rpt
+| Design       : Vga_sync_alpha
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | Yes                    |              47 |           18 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              10 |            4 |
+| Yes          | No                    | Yes                    |              50 |           20 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------+------------------+------------------+----------------+
+|  Clock Signal  |     Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                      | reset_IBUF       |                1 |              2 |
+|  clk_IBUF_BUFG |                      |                  |                2 |              3 |
+|  clk_IBUF_BUFG | one/E[0]             | zero/AR[0]       |                5 |             10 |
+|  clk_IBUF_BUFG | one/q_reg[1]_0[0]    | zero/AR[0]       |                5 |             10 |
+|  clk_IBUF_BUFG | zero/Q2              |                  |                4 |             10 |
+|  clk_IBUF_BUFG | five/zero/bar_x_next | zero/AR[0]       |                4 |             10 |
+|  clk_IBUF_BUFG | two/E[0]             | zero/AR[0]       |                6 |             20 |
+|  clk_IBUF_BUFG |                      | zero/AR[0]       |               17 |             45 |
++----------------+----------------------+------------------+------------------+----------------+
+
+
