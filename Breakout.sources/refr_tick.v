@@ -1,8 +1,5 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// CECS 361 - Fall 2019
-// Professor John Tramel
-// Lab5
 // By Omar Aquino Pineda
 // File Name: refr_tick.v
 // The following module sends a postivie signal (refr_tick.v) every 60Hz assuming 
